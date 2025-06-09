@@ -1,36 +1,36 @@
 @import "tailwindcss";
 
-main {  display: grid;
-  grid-template-columns: 0.1fr 4fr 0.2fr 1.1fr 11.3fr 0.1fr 2.2fr 0.7fr 3.6fr 0.1fr 0.1fr;
-  grid-template-rows: 1.3fr 1.8fr 0.1fr 3.4fr 1fr 0.8fr 2.3fr 0.1fr 1.9fr 0.1fr 10.8fr 1fr 1.8fr 2.6fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". . . . . . . . . . ."
-    ". points points points points . game_shop game_shop game_shop . ."
-    ". image image image image . upgrades upgrades upgrades . ."
-    ". image image image image . upgrades upgrades upgrades . ."
-    ". image image image image . upgrades upgrades upgrades . ."
-    ". image image image image . upgrades upgrades upgrades . ."
-    ". image image image image . upgrades upgrades upgrades . ."
-    ". image image image image . upgrades upgrades upgrades . ."
-    ". image image image image . upgrades upgrades upgrades . ."
-    ". image image image image . upgrades upgrades upgrades . ."
-    ". image image image image . upgrades upgrades upgrades . ."
-    ". . . . . . . . . . ."
-    ". skills_shop skills_shop skills_shop skills_shop . . . . . ."
-    "skills skills skills skills skills skills skills skills skills skills skills"
-    "skills skills skills skills skills skills skills skills skills skills skills";
+
+  main {  display: grid;
+    grid-template-columns: 4.5fr 1.7fr;
+    grid-template-rows: 0.6fr 1.3fr 5.3fr 0.7fr 1.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "points game_shop"
+      "image upgrades"
+      "image upgrades"
+      "skills_shop ."
+      "skills skills";
+  }
+  
+  .image { grid-area: image; }
+  
+  .upgrades { grid-area: upgrades; }
+  
+  .skills { grid-area: skills; }
+  
+  .points { grid-area: points; }
+  
+  .skills_shop { grid-area: skills_shop; }
+  
+  .game_shop { grid-area: game_shop; }
+  
+
+#bgImage{
+  background-image: url("/src/image/background.png");
+  background-position: cover;
+ 
 }
 
-.image { grid-area: image; }
 
-.upgrades { grid-area: upgrades; }
-
-.skills { grid-area: skills; }
-
-.points { grid-area: points; }
-
-.skills_shop { grid-area: skills_shop; }
-
-.game_shop { grid-area: game_shop; }
