@@ -13,10 +13,11 @@
   <main class="w-screen h-screen">
     <div id="bgImage" class="image">
 
-      <button onclick="bigclick()" class="cursor-pointer transition-all duration-50 clicker active:scale-75 active:rotate-12 ">
-        
-      <img src="src/image/button.png" alt="button" width="450" height= "150"/>
-       
+      <button onclick="bigclick()"
+        class="cursor-pointer transition-all duration-50 clicker active:scale-75 active:rotate-12 ">
+
+        <img src="src/image/button.png" alt="button" width="450" height="150" />
+
       </button>
 
     </div>
@@ -28,37 +29,83 @@
 
 
     <div class="skills bg-lime-800">
-      <h1 class="text-2xl text-white font-light">Pooker Face skills</h1> 
-      <button onclick="buyPokerFaceskill()" class="bg-lime-800 cursor-pointer transition-all duration-50 clicker active:scale-75 active:rotate-12 ">
-       
-        <div class="flex">
-        <img src="src/image/pokerface.png" width="100" height="100" />
-      </div>
-        <div class="fire">
-    
-        <p id="plevel" class="text-1xl text-white font-light "> Level 00 </p>
+      <h1 class="text-2xl text-white font-light"> skills set game_shop</h1>
+      <div class="flex gap-6">
+        <button onclick="buyPokerFaceskill()"
+          class="bg-lime-800 cursor-pointer transition-all duration-50 clicker active:scale-75 active:rotate-12 ">
+
+          <!-- <div class="flex"> -->
+          <img src="src/image/pokerface.png" width="100" height="100" />
+          <!-- </div> -->
+          <div class="fire text-white">
+            <h2>poker Face skill</h2>
+            <p id="plevel" class="text-1xl text-white font-light "> Level 00 </p>
+            <p class="text-1xl text-white font-light ">Cost:100 </p>
+          </div>
+        </button>
+
+
+
+        <button onclick="buyLuckskill()"
+          class="bg-lime-800 cursor-pointer transition-all duration-50 clicker active:scale-75 active:rotate-12 text-white">
+          <img src="src/image/fire.png" width="100" height="100" />
+          <div>
+            <h2>Lucks skill</h2>
+            <p id="lLevel">Level 00</p>
+            <p>Cost: 300 </p>
+          </div>
+
+        </button>
+
         
-        <p class="text-1xl text-white font-light ">Cost:100 </p>
-      </div>
+        <button onclick="buybluffingskill()"
+          class="bg-lime-800 cursor-pointer transition-all duration-50 clicker active:scale-75 active:rotate-12 text-white">
+      <img src="src/image/b.png" width="100" height="100" />
+        <div>
+          <h2>bluffing skill</h2>
+          <p id="bLevel">Level 00</p>
+          <p>Cost: 600</p>
+        </div>
+
       </button>
+
+
+      <button onclick="buymillenniumeyeskill()"
+          class="bg-lime-800 cursor-pointer transition-all duration-50 clicker active:scale-75 active:rotate-12 text-white">
+      <img src="src/image/hi.png" width="100" height="100" />
+        <div>
+          <h2>millennium eye</h2>
+          <p id="mLevel">Level 00</p>
+          <p>Cost: 900</p>
+        </div>
+
+      </button>
+
+      <button onclick="buygameskill()"
+      class="bg-lime-800 cursor-pointer transition-all duration-50 clicker active:scale-75 active:rotate-12 text-white">
+  <img src="src/image/f.png" width="100" height="100" />
+    <div>
+      <h2>Game skills</h2>
+      <p id="fLevel">Level 00</p>
+      <p>Cost: 1000</p>
+    </div>
+
+  </button>
+
+
+
+      </div>
 
     </div>
 
-    <button onclick="buyLucksskill()" class="bg-lime-800 cursor-pointer transition-all duration-50 clicker active:scale-75 active:rotate-12 ">
-      <img src="/src/images/characters/maelle.webp">
-      <div>
-        <h2>Lucks skill</h2>
-        <p id="lLevel">Level 00</p>
-        <p>Cost: 10000 lp</p>
-      </div>
-    </button>
 
-  
+
+
 
 
     <div class="points bg-yellow-100">
 
-      <h1 id="pointCounter" class="text-4xl font-extrabold text-amber-300 text-center font-sans"> 0  Coins</h1>
+      <h1 id="pointCounter" class="text-4xl font-extrabold text-amber-300 text-center font-sans"> 0 Coins</h1>
     </div>
 
 
